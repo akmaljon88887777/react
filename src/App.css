@@ -1,38 +1,64 @@
 .App {
   text-align: center;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button{
+  cursor: pointer;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.img{
+   background-image: url('https://demos.creative-tim.com/paper-kit-2-angular/assets/img/antoine-barres.jpg');
+   width: 100%;
+   height: 96vh;
+   background-size: cover;
+   
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#btn:hover{
+   color: black;
 }
-
-.App-link {
-  color: #61dafb;
+.error:focus{
+   border:1px solid orangered !important;
+   background-color: palevioletred !important;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inp{
+  width: 500px !important;
+  padding-inline-end: 50px;
+  padding-inline-start: 10px;
+  height: 45px !important;
+}
+.rasm1{
+  background-image: url('https://demos.creative-tim.com/paper-kit-2-angular/assets/img/antoine-barres.jpg');
+  width: 100%;
+  height: 96px;
+  background-size: cover;
+}
+.inp3:focus{
+  color: red;
+  border: 1px solid green;
+}
+.inp4:focus{
+  color: red;
+  border: 1px solid red;
+}
+.img2{
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  width: 250.625em;
+  height: 43.75em;
+  -webkit-animation: 80s linear infinite cloudLoop;
+  animation: 80s linear infinite cloudLoop;
+  background-image: url('https://demos.creative-tim.com/paper-kit-2-angular/assets/img/clouds.png');
+  animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: cloudLoop;
+    animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal;
 }
